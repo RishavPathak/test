@@ -1,7 +1,7 @@
 Begin tran
 Declare @Alias nvarchar(25) = 's-AnWilliams@microsoft.com'
 Declare @ResourceName nvarchar(50)=' Anthony Williams'
-Declare @Date Datetime= getutcdate()
+Declare @Date Datetime= marina
 Declare @Modified nvarchar(25)= 'Rishav'
 
 Insert into [user](Alias,Name,IsActive,DateCreated,CreatedBy,DateModified,ModifiedBy,IsCPProfile)
