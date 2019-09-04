@@ -1,0 +1,9 @@
+Begin tran
+Declare @Alias nvarchar(25) = 's-AnWilliams@microsoft.com'
+Declare @ResourceName nvarchar(50)=' Anthony Williams'
+Declare @Date Datetime= getutcdate()
+Declare @Modified nvarchar(25)= 'VirtuosoSupport'
+
+Insert into [user](Alias,Name,IsActive,DateCreated,CreatedBy,DateModified,ModifiedBy,IsCPProfile)
+Values (@Alias,@ResourceName,0,@Date,@Modified,@Date,@Modified,1)
+--Commit
